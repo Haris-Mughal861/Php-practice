@@ -359,6 +359,60 @@ foreach($employees as list($a,$b,$c,$d)){
 };
 echo "</table>";
 
+//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//
+
+
+
+
+
+
 ?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit</title>
+</head>
+<body>
+
+<form action=<?php echo $_SERVER['PHP_SELF']  ?> method="post">
+
+<label >Name </label>
+
+<input type="text" name="name">
+
+<label>Number</label>
+
+<input type="number" name="number">
+
+<input type="submit" name="save">
+
+
+
+</form>
+
+
+
+<?php
+
+if (isset($_POST['save'])){
+
+  echo $_POST['name'] . "<br>";
+
+  echo $_POST['number']. "<br>";
+};
+
+if (isset($_POST['save'])){
+
+  echo $_POST['save'] ."<br>";
+  };
+
+?>
+  
+</body>
+</html>
 </body>
 </html>
