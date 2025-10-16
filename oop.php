@@ -337,12 +337,27 @@ $employees = [
   [4,"Haris","worker","30000"]
 ];
 
+echo "<table table border = '2' cellpadding = '10'>
+
+<tr>
+<th>Id</th>
+<th>Name</th>
+<th>Designation</th>
+<th>salary</th>
+</tr>
+
+
+
+";
 
 foreach($employees as list($a,$b,$c,$d)){
 
-  echo $a,$b,$c,$d . "<br>";
+  echo "<tr><td>$a</td>,<td>$b</td>,<td>$c</td>,<td>$d</td> . </tr>";
+
+
 
 };
+echo "</table>";
 
 ?>
 </body>
